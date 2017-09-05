@@ -14,8 +14,9 @@ feature 'user creates an account' do
   scenario 'specifying valid and required information' do
     visit root_path
     click_link "Sign Up"
+    fill_in "Username", with: "user"
     fill_in "Email", with: "user@example.com"
-    fill_in "Password", with: 'password'
+    fill_in "user_password", with: 'password'
     fill_in "Password Confirmation", with: 'password'
     click_button 'Sign Up'
 
