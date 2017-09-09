@@ -23,7 +23,7 @@ Acceptance Criteria:
 - If I specify a valid, previously registered email and password,
 - I am authenticated and I gain access to the system
 - If I specify an invalid email and password, I remain unauthenticated
-- If I am already signed in, I can't sign in again
+- If I am already signed in, I can't sign in again.
 
 #User signs out
 
