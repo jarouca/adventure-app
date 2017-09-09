@@ -43,7 +43,7 @@ So that I can keep my profile up to date
 
 Acceptance criteria:
 - I must be able to access the 'edit profile' page from the top bar displayed on every page
-- I must be given a notification if my update was successful
+- I must be given a notification if my update was successful.
 
 #User deletes profile:
 
