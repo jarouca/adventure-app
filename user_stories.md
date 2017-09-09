@@ -52,5 +52,5 @@ I want to delete my profile
 So that my information is no longer retained by the app
 
 Acceptance criteria:
-- I must be able to access the 'delete profile' link from the 'edit profile' page
+- I must be able to access the 'delete profile' link from the 'edit profile' page.
 - I must be given notification that my deletion was successful.
