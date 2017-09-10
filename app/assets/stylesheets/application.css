@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
 
  html, body, h1, h2, h3, h4, p, div, ul, li {
