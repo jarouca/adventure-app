@@ -15,8 +15,7 @@
  *= require foundation_and_overrides
 
  */
-
- html, body, h1, h2, h3, h4, p, div, ul, li {
+html, body, h1, h2, h3, h4, p, div, ul, li {
    padding: 0;
    border: 0;
    margin: 0;
@@ -24,6 +23,10 @@
    font-size: 100%;
  }
 
- * {
-  font-family: georgia;
+.top-bar .menu {
+   float: left;
+ }
+
+.top-bar-right li {
+  float: right;
 }
