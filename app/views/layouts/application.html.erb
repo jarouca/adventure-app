@@ -13,19 +13,29 @@
 
   <body>
     <div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="menu">
-      <li class="menu-text">Site Title</li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><a href="#">Sign Up</a></li>
-      <li><a href="#">Sign In</a></li>
-    </ul>
-  </div>
-</div>
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text"><a href="/">Choose Your Tale</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <% if user_signed_in? %>
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+          <% else %>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li><%= link_to 'Sign In', new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
