@@ -23,31 +23,3 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
    font: inherit;
    font-size: 100%;
  }
-
-.top-bar {
-  background-color: #82e0aa;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.top-bar .menu {
-   float: left;
- }
-
-.top-bar-right  {
-  float: right;
-}
-
-.top-bar-right li {
-  float: left;
-  margin-right: 10px;
-}
-
-.menu-text {
-  font-size: 20px;
-  color: white;
-}
-
-.menu a {
-  color: white;
-}
