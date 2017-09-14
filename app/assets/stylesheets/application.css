@@ -23,3 +23,17 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
    font: inherit;
    font-size: 100%;
  }
+
+.top-bar {
+  background-color: #82e0aa;
+  height: 40px;
+}
+
+.menu {
+  background-color: #82e0aa;
+  height: 40px;
+}
+
+.menu-text {
+  font-size: 20px;
+}
