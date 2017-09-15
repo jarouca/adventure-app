@@ -37,3 +37,7 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
 .menu-text {
   font-size: 20px;
 }
+
+.callout {
+  background-color: #f0e68c;
+}
