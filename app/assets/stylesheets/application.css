@@ -44,3 +44,8 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
 .menu li a {
   color: white;
 }
+
+#welcome-banner {
+  margin: 20px 0px 40px 0px;
+  font-size: 20px;
+}
