@@ -24,6 +24,10 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
    font-size: 100%;
  }
 
+* {
+  font-family: MedievalSharp;
+}
+
 .top-bar {
   height: 40px;
   color: white;
@@ -35,10 +39,12 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
 
 .menu-text {
   font-size: 20px;
+  font-family: MedievalSharp;
 }
 
 .callout {
   background-color: #f0e68c;
+  height: 200px;
 }
 
 .menu li a {
@@ -48,4 +54,13 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
 #welcome-banner {
   margin: 20px 0px 40px 0px;
   font-size: 20px;
+  font-family: MedievalSharp;
+}
+
+.panel-header {
+  margin: 0px 0px 10px 0px;
+}
+
+.callout p {
+  font-family: MedievalSharp;
 }
