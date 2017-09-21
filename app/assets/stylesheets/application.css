@@ -70,3 +70,12 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
   margin-bottom: 20px;
   font-size: 30px;
 }
+
+.form-inputs {
+  width: 400px;
+}
+
+.row column {
+  background-color: #f0e68c;
+
+}
