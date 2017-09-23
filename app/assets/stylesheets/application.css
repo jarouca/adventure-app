@@ -64,3 +64,18 @@ html, body, h1, h2, h3, h4, p, div, ul, li {
 .callout p {
   font-family: MedievalSharp;
 }
+
+.form-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.form-inputs {
+  width: 400px;
+}
+
+body {
+  background-color: #f0e68c;
+
+}
