@@ -56,8 +56,33 @@ Acceptance criteria:
 - I must be given notification that my deletion was successful.
 
 #user creates a character
-#user deletes a character
+
+As an authenticated user
+I want to create a character
+So my character can build quests
+
+Acceptance criteria:
+- I must be given notification that my character creation was successful
+-
+
 #user edits a character(only allowed before a story has begun)
+
+As an authenticated user
+I want to edit my character
+So I can change character attributes
+
+Acceptance criteria:
+- I can only edit my character if they are not currently engaged on a quests
+- 
+#user deletes a character
+
+As an authenticated user
+I want to delete my character
+So I can maintain my profile
+
+- I must be able to access the 'delete character' link from the 'edit character' page
+- I must be given notification that my deletion was successful
+
 #user selects a story to begin
 #User can restart or redo a quest with a clean slate
 
