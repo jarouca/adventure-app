@@ -55,6 +55,10 @@ Acceptance criteria:
 - I must be able to access the 'delete profile' link from the 'edit profile' page.
 - I must be given notification that my deletion was successful.
 
+#user creates a character
+#user deletes a character
+#user edits a character(only allowed before a story has begun)
+#user selects a story to begin
 #User can restart or redo a quest with a clean slate
 
 #heroku
