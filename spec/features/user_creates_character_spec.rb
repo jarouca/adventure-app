@@ -17,5 +17,8 @@ feature 'user creates a character' do
   end
 
   scenario 'user fails to provide the required information'
+    login_as(user, :scope => :user)
+    visit root_path
+    click_link 'Create Character'
   end
 end
