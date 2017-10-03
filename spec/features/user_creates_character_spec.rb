@@ -13,12 +13,20 @@ feature 'user creates a character' do
     login_as(user, :scope => :user)
     visit root_path
     click_link 'Create Character'
+    fill_in 'Name', with: 'Conan'
+    page.select "6'5", from: "Height"
+    page.select "225", from: "Weight"
+    page.select "Male", from: "Gender"
+    page.select "Black", from: "Hair Color"
+    page.select "Blue", from: "Eye Color"
+    page.select "32", from: "Age"
 
+    click_button 'Create Character'
+    expect(page).to have_content("Character successfully created.")
+    expect(page).to have_content("Now you are ready to select a quest and begin questing!")
   end
 
-  scenario 'user fails to provide the required information'
-    login_as(user, :scope => :user)
-    visit root_path
-    click_link 'Create Character'
+  scenario 'user fails to provide the required information' do
+
   end
 end
