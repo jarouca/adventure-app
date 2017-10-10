@@ -16,6 +16,10 @@ class CharactersController < ApplicationController
     @weight_options = (20..500).to_a
   end
 
+  def create
+    binding.pry
+  end
+
 
 
 
