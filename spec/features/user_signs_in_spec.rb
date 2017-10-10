@@ -54,7 +54,8 @@ feature 'user signs in' do
     click_button 'Sign In'
 
     expect(page).to have_content('Sign Out')
-    expect(page).to_not have_content('Sign In')
+    # expect(page).to_not have_content('Sign In')
+    expect(page).to have_no_link('Sign In')
 
     visit new_user_session_path
     expect(page).to have_content('You are already signed in.')
