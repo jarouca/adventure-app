@@ -7,12 +7,16 @@ class CharactersController < ApplicationController
     @height_options = []
     feet = (1..8).to_a
     feet.each do |height|
-      count = 1
+      count = 0
       while count < 12 do
-        @height_options << height.to_s + "&#39;" + count.to_s + "&#34;"
+        @height_options << height.to_s + "\'" + count.to_s + "\""
         count += 1
       end
-
     end
+    @weight_options = (20..500).to_a
   end
+
+
+
+
 end

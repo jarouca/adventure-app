@@ -17,10 +17,10 @@ feature 'user creates a character' do
     fill_in 'Name', with: 'Conan'
     page.select "6'5", from: "Height"
     page.select "225", from: "Weight"
-    page.select "Male", from: "Gender"
-    page.select "Black", from: "Hair Color"
-    page.select "Blue", from: "Eye Color"
-    page.select "32", from: "Age"
+    choose('Male')
+    fill_in "Hair Color", with: "Black"
+    fill_in "Eye Color", with: "Blue"
+    fill_in "Age", with: "32"
 
     click_button 'Create Character'
     expect(page).to have_content("Character successfully created.")
