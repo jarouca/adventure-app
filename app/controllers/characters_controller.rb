@@ -17,7 +17,6 @@ class CharactersController < ApplicationController
   end
 
   def create
-    binding.pry
   end
 
 
