@@ -48,14 +48,15 @@
   <div class="row">
     <div class="large-4 columns">
       <div class="row collapse">
-        <label>Weight
+        <label>Weight</label>
+        <div class="small-9 columns">
           <select name="weight">
             <% @weight_options.each do |weight| %>
               <% weight.to_s %>
               <option value=<%= "#{weight}" %> > <%= weight %> </option>
             <% end %>
           </select>
-        </label>
+        </div>
         <div class="small-3 columns">
           <span class="postfix">pounds</span>
         </div>
