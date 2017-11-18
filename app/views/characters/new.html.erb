@@ -37,9 +37,9 @@
   <div class="row">
     <div class="small-9 columns">
       <label>Height
-        <select>
+        <select name="height">
           <% @height_options.each do |height| %>
-            <option name="height" value=<%= "#{height}" %> > <%= height %> </option>
+            <option value=<%= "#{height}" %> > <%= height %> </option>
           <% end %>
         </select>
       </label>
@@ -49,7 +49,7 @@
     <div class="large-4 columns">
       <div class="row collapse">
         <label>Weight
-          <select>
+          <select name="weight">
             <% @weight_options.each do |weight| %>
               <% weight.to_s %>
               <option value=<%= "#{weight}" %> > <%= weight %> </option>
