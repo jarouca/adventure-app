@@ -72,8 +72,8 @@ I want to edit my character
 So I can change character attributes
 
 Acceptance criteria:
-- I can only edit my character if they are not currently engaged on a quests
-- 
+- I can only edit my character if they are not currently engaged on a quest
+-
 #user deletes a character
 
 As an authenticated user

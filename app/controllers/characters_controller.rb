@@ -1,5 +1,5 @@
 class CharactersController < ApplicationController
-
+  skip_before_filter :verify_authenticity_token, :only => :create
   def index
   end
 
@@ -17,6 +17,7 @@ class CharactersController < ApplicationController
   end
 
   def create
+    binding.pry
   end
 
 
