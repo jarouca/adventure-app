@@ -15,8 +15,8 @@ feature 'user creates a character' do
     visit root_path
     click_link 'Create A Character'
     fill_in 'Name', with: 'Conan'
-    page.select "6'5", from: "Height"
-    page.select "225", from: "Weight"
+    page.select "6'5", from: "height"
+    page.select "225", from: "weight"
     choose('Male')
     fill_in "Hair Color", with: "Black"
     fill_in "Eye Color", with: "Blue"
