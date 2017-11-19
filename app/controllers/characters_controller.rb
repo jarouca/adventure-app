@@ -17,9 +17,14 @@ class CharactersController < ApplicationController
   end
 
   def create
+    @character = Character.new(character_params)
+    @character.user_id = current_user.id
   end
 
+  private
 
-
+  def character_params
+    params.require(:character).permit(:name, :hair_color, :eye_color, :height, :weight, :gender)
+  end
 
 end
