@@ -19,6 +19,13 @@ class CharactersController < ApplicationController
   def create
     @character = Character.new(character_params)
     @character.user_id = current_user.id
+
+    if @character.save
+      flash[:alert] = "Character successfully created."
+      redirect_to user_character_path(current_user, @character)
+    else
+      render :new
+    end
   end
 
   private
