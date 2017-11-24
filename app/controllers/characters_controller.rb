@@ -3,6 +3,10 @@ class CharactersController < ApplicationController
   def index
   end
 
+  def show
+    @characters = Character.where(user_id: current_user)
+  end
+
   def new
     @height_options = []
     feet = (1..8).to_a
