@@ -11,7 +11,11 @@
 
 <div class="small-12 medium-4 columns">
   <div class="callout">
-    <h3 class="text-center panel-header"><strong><%= link_to 'Create A Character', new_user_character_path(current_user) %></strong><h3>
+    <% if current_user %>
+      <h3 class="text-center panel-header"><strong><%= link_to 'Create A Character', new_user_character_path(current_user) %></strong><h3>
+    <% else %>
+      <h3 class="text-center panel-header"><strong>Create A Character</strong><h3>
+    <% end %>
     <p>
       Using our custom character creation form, create your character that will embark upon one or many epic quests. You are able to customize such attributes as physical traits...
     </p>

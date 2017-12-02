@@ -28,6 +28,10 @@ feature 'user creates a character' do
   end
 
   scenario 'user fails to provide the required information' do
-
+    login_as(user, :scope => :user)
+    visit root_path
+    click_link 'Create A Character'
+    click_button 'Create Character'
+    expect(page).to have_content("Please fill in the required fields.")
   end
 end
