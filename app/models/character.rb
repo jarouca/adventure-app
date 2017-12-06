@@ -5,6 +5,6 @@ class Character < ApplicationRecord
   validates :hair_color, presence: true
   validates :height, presence: true
   validates :weight, presence: true
-  validates :age, presence: true
+  validates :age, presence: true, numericality: true
   validates :user_id, presence: true
 end
