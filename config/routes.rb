@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root 'users#index'
 
-  resources :characters
+  resources :users do
+    resources :characters
+  end 
 
 end

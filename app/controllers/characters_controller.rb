@@ -1,6 +1,10 @@
 class CharactersController < ApplicationController
-
+  skip_before_filter :verify_authenticity_token, :only => :create
   def index
+  end
+
+  def show
+    @characters = Character.where(user_id: current_user)
   end
 
   def new
@@ -17,10 +21,29 @@ class CharactersController < ApplicationController
   end
 
   def create
-    binding.pry
+    character = Character.new(
+      name: params["name"],
+      hair_color: params["hair_color"],
+      eye_color: params["eye_color"],
+      height: params["height"],
+      weight: params["weight"],
+      gender: params["gender"],
+      age: params["age"],
+      user_id: current_user.id
+    )
+    if character.save
+      flash[:alert] = "Character successfully created. Now you are ready to select a quest and begin questing!"
+      redirect_to user_character_path(current_user, character)
+    else
+      flash[:alert] = "Please fill in the required fields."
+      redirect_to new_user_character_path(current_user)
+    end
   end
 
+  private
 
-
+  def character_params
+    params.require(:character).permit(:name, :hair_color, :eye_color, :height, :weight, :age, :gender)
+  end
 
 end
